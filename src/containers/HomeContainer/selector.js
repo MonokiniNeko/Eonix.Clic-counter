@@ -1,5 +1,5 @@
 import { createSelector } from 'reselect';
-import { initialState } from './reducer';
+import { initialState } from '../../state/HomeState/reducer';
 
 const selectHomeContainerDomain = state => state.homeContainer || initialState;
 const makeSelectHomeContainerCounter = () => createSelector(selectHomeContainerDomain, substate => substate.counter);
